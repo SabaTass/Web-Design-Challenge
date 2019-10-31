@@ -1,0 +1,39 @@
+body{
+    background-color: antiquewhite; 
+}
+/* Navbar */
+.navbar{
+    max-height: 57px; 
+}
+.navigation .navbar-brand{
+    color: white; 
+    margin-left: 30px; 
+    padding: inherit; 
+    font-weight: bold; 
+    background-color: rgb(36, 119, 115);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    background-color: white; 
+    font-size: 15px; 
+}
+.active, .dropdown-menu .dropdown-item:active a:hover{
+    background-color: whitesmoke !important;
+}
+.dropdown-item{
+    color: rgb(66, 96, 124) !important; 
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: whitesmoke !important; 
+}
+a{
+    color: rgb(66, 96, 124);
+    font-size: 15px; 
+}
+.nav-link:hover{
+    background-color: whitesmoke !important;
+   }
+
+.navbar-brand:hover{
+color: rgb(175, 175, 175) !important;
+}
