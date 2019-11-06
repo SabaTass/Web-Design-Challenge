@@ -1,111 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us"><head>
+    <meta charset="UTF-8">
+    <title>Comparison page of Scatter Plots</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Bootstrap Visualization Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!--CSS Link-->
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
 </head>
-
-<body>
- <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Lattitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="comparisons.html">Comparison</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-          </li>
-  
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <!-- Content -->
-  <div class="container">
+<body id="Comparisons">
+  <header>
+    <div class="container">
     <div class="row">
-      <div>
-        <!-- Left box  -->
-        <div class="box">
-          <h3 class="title">Comparison: Latitude vs X</h3>
-          <hr>
-          <p>Click any plot to get an in-depth analysis.</p>
-          <div class="container" style="padding-bottom: 40px;">
-            <div class="row">
-              <div class="col-lg-6" style="padding: 30px;">
-                <div class="title">vs. Max Temperature</div>
-                <a href="max_temperature.html">
-                  <img class="panel" src="assets/images/Fig1.png" alt="Max Temperature Image">
-                </a>
+      <div class="col-xs-12">
+        <nav class="navbar navbar-default navstyle">
+          <div class="container-fluid navstyle">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>              
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">                      
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle navcolor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigation <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="index.html">Summary</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="active"><a href="comparisons.html">Comparison <span class="sr-only">(current)</span></a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="data.html">Data</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="MaxTemperature.html">Temperature</a></li>
+                        <li><a href="Humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind Speed</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">                      
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle navcolor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                      <ul class="dropdown-menu">                        
+                        <li><a href="MaxTemperature.html">Temperature</a></li>
+                        <li><a href="Humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind Speed</a></li>                          
+                      </ul>
+                  </li>
+                  <li class="active"><a class="navcolor" href="comparisons.html">Comparison <span class="sr-only">(current)</span></a></li>
+                  <li><a class="navcolor" href="data.html">Data</a></li>
+                </ul>
               </div>
-              <div class="col-lg-6" style="padding: 30px;">
-                <div class="title">vs. Humidity</div>
-                <a href="humidity.html">
-                  <img class="panel" src="assets/images/Fig2.png" alt="Humidity Graph">
-                </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6" style="padding: 30px;">
-                <div class="title">vs. Cloudiness</div>
-                <a href="cloudiness.html">
-                  <img class="panel" src="assets/images/Fig3.png" alt="Cloudiness Graph">
-                </a>
-
-              </div>
-              <div class="col-lg-6" style="padding: 30px;">
-                <div class="title">vs. Wind Speed</div>
-                <a href="wind_speed.html">
-                  <img class="panel" src="assets/images/Fig4.png" alt="Wind Speed Graph">
-                </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="all">
+        <div class="row">
+            <div class="col-xs-12">
+              <div class="box">
+                <section id="title">
+                  <h1>Comparison</h1>
+                </section>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer Section -->
-  <footer>
-    <div class="footer">Saba Tassawar</div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+          <hr>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <a href="MaxTemperature.html">
+                <img class="img-responsive" src="assets/images/Fig1.png" alt="City Latitude vs Temperature in degrees Fahrenheit">
+              </a>
+            </div><!--
+            --><div class="col-sm-12 col-md-6">
+              <a href="Humidity.html">
+                <img class="img-responsive" src="assets/images/Fig2.png" alt="City Latitude vs Humidity">
+              </a>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <a href="cloudiness.html">
+                  <img class="img-responsive" src="assets/images/Fig3.png" alt="City Latitude vs Cloudiness">
+                </a>
+              </div><!--
+              --><div class="col-sm-12 col-md-6">
+                <a href="windspeed.html">
+                  <img class="img-responsive" src="assets/images/Fig4.png" alt="City Latitude vs Wind Speed">
+                </a>
+              </div>
+          </div>
+          
+  </div></div></body></html>
